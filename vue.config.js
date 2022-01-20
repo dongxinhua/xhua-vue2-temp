@@ -13,9 +13,9 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias
       .set('@', path.resolve('src'))
-      .set('assets', path.resolve('src/assets'))
-      .set('components', path.resolve('src/components'))
-      .set('app', path.resolve('src/app'))
-      .set('util', path.resolve('src/util'))
+      .set('assets', path.resolve('src/common/assets'))
+      .set('components', path.resolve('src/common/components'))
+      .set('apps', path.resolve('src/common/apps'))
+      .set('utils', path.resolve('src/common/utils'))
   },
 }
