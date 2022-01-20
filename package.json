@@ -3,14 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve",
+    "start:qa": "vue-cli-service serve --mode qa",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:prod": "vue-cli-service build",
+    "build:qa": "vue-cli-service build --mode qa",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
+    "qs": "^6.10.3",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -32,7 +38,9 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.5.0",
+    "node-sass": "4.12.0",
     "prettier": "^2.2.1",
+    "sass-loader": "8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
