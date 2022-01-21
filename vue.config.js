@@ -15,7 +15,7 @@ module.exports = {
       .set('@', path.resolve('src'))
       .set('assets', path.resolve('src/common/assets'))
       .set('components', path.resolve('src/common/components'))
-      .set('apps', path.resolve('src/common/apps'))
+      .set('apps', path.resolve('src/apps'))
       .set('utils', path.resolve('src/common/utils'))
   },
 }
