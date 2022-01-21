@@ -11,5 +11,6 @@ export default {
 <style lang="scss" scoped>
 .profile {
   box-sizing: border-box;
+  font-size: 36px;
 }
 </style>
