@@ -1,12 +1,12 @@
 export default {
   path: '/',
-  component: () => import(/* webpackChunkName: "home" */ './App.vue'),
+  component: () => import(/* webpackChunkName: "home" */ './index.vue'),
   children: [
     {
-      path: '',
-      name: 'home',
+      path: 'child-page',
+      name: 'child-page',
       component: () =>
-        import(/* webpackChunkName: "home" */ './views/index.vue'),
+        import(/* webpackChunkName: "home" */ './views/child-page/index.vue'),
     },
   ],
 }
