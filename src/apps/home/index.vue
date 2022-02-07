@@ -1,5 +1,9 @@
 <template>
-  <div class="home">home</div>
+  <div class="home">
+    <router-link to="/child-page">home</router-link>
+    <!-- 子路由 -->
+    <router-view />
+  </div>
 </template>
 
 <script>
